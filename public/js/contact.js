@@ -6,7 +6,7 @@ var messageInput = $("#message");
 var contactForm = $("#contact_info")
 
 $(contactForm).on("submit", function handleFormSubmit(event) {
-    event.preventDefualt();
+    event.preventDefault();
 
     if (!nameInput.val().trim() || !emailInput.val().trim() || !messageInput.val().trim()) {
         return;
@@ -27,7 +27,7 @@ submitContact(newContact);
 
 function submitContact(Contact) {
     $.post("/api/contacts", Contact, function() {
-        // window.location.href = "/contact";
+        window.location.href = "/contact";
     });
 }
 

@@ -17,4 +17,16 @@ module.exports = function(app) {
       res.json(dbContact);
     });
   });
+
+   // POST route for saving a new contact
+   app.post('/api/contacts', function(req, res) {
+    console.log(req.body);
+    db.Contact.create({
+      name: req.body.name,
+      email: req.body.email,
+      message: req.body.message
+    }).then(function(dbContact) {
+      res.json(dbContact);
+    });
+  });
 };

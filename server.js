@@ -27,9 +27,9 @@ app.use(express.static("public"));
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
-app.get('/', (req, res) => {
-    res.send(process.env.DATABASE_PASSWORD);
-})
+// app.get('/', (req, res) => {
+//     res.send(process.env.DATABASE_PASSWORD);
+// })
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
