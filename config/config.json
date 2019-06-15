@@ -16,10 +16,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "portfolio_contact",
-    "host": "127.0.0.1",
+    "username": "tk025d9wcsmuuqa7",
+    "password": "edl4n97ri870ku0j",
+    "database": "f0af0ebaybqpmx5x",
+    "host": "u0zbt18wwjva9e0v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   }
